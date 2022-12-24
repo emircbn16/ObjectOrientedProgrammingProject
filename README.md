@@ -28,4 +28,4 @@ Visual Studio Code, QtDesigner, DB Browser(SQLite), Chrome Self Test Software
 Helpful Resources
 Github Copilot, ChatGPT 
 
-
+Attention! There are 18 design files, if these file locations are not updated in the app.py main file, the designs will not appear.
