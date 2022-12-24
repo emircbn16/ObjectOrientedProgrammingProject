@@ -81,35 +81,6 @@ border-radius:20px;</string>
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="btn_geri">
-    <property name="geometry">
-     <rect>
-      <x>400</x>
-      <y>790</y>
-      <width>25</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>11</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-      <underline>false</underline>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color:rgb(0,0,0)
-</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="icon">
-     <iconset>
-      <normaloff>Images/geri.png</normaloff>Images/geri.png</iconset>
-    </property>
-   </widget>
    <widget class="QTextBrowser" name="textBrowser">
     <property name="geometry">
      <rect>
@@ -184,6 +155,35 @@ p, li { white-space: pre-wrap; }
     </property>
     <property name="text">
      <string>© 2022, Made With By Emir,Doğukan,Ceyhun...</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_geri">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>780</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(0,0,0)
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Images/geri.png</normaloff>Images/geri.png</iconset>
     </property>
    </widget>
   </widget>
