@@ -1,0 +1,18 @@
+<RCC>
+  <qresource prefix="images">
+    <file>medyaa.jpg</file>
+    <file>Images/afet.png</file>
+    <file>Images/background.png</file>
+    <file>Images/cevre.png</file>
+    <file>Images/ekonomi.png</file>
+    <file>Images/enerji.png</file>
+    <file>Images/geri.png</file>
+    <file>Images/github.png</file>
+    <file>Images/in.png</file>
+    <file>Images/insta.png</file>
+    <file>Images/logo.ico</file>
+    <file>Images/stack.png</file>
+    <file>Images/tarim.png</file>
+    <file>Images/yasam.png</file>
+  </qresource>
+</RCC>
