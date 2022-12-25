@@ -135,38 +135,6 @@ border-radius:25px;</string>
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;© 2022, Made With By Emir,Doğukan,Ceyhun...&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="btn_geri">
-    <property name="geometry">
-     <rect>
-      <x>380</x>
-      <y>810</y>
-      <width>25</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>11</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-      <underline>false</underline>
-     </font>
-    </property>
-    <property name="cursor">
-     <cursorShape>WaitCursor</cursorShape>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color:rgb(0,0,0)
-</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="icon">
-     <iconset>
-      <normaloff>Images/geri.png</normaloff>Images/geri.png</iconset>
-    </property>
-   </widget>
    <widget class="QLabel" name="lbl_social">
     <property name="geometry">
      <rect>
@@ -213,7 +181,7 @@ border-radius:25px;</string>
      <string notr="true">color:rgba(255, 255, 255, 210);</string>
     </property>
     <property name="title">
-     <string>Dogukan Bostancı</string>
+     <string>Doğukan Bostancı</string>
     </property>
     <widget class="QPushButton" name="instaD">
      <property name="geometry">
@@ -378,6 +346,33 @@ border-image: url(:/images/Images/insta.png);</string>
       <string/>
      </property>
     </widget>
+   </widget>
+   <widget class="QPushButton" name="btn_geri">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>790</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>BusyCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image:url(:/images/Images/Icon/geri.png)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
    </widget>
   </widget>
  </widget>

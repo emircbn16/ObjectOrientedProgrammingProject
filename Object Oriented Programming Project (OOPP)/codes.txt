@@ -1,0 +1,20 @@
+Resim Dosyalarını(.qrc) .py'a Dönüştürme Kodu:
+pyrcc5 res.qrc -o res.py
+Tasarım (.ui) Dosyalarını .py'a Dönüştürme Kodu:
+python -m PyQt5.uic.pyuic -x Tasarim/afet.ui -o afet.py
+python -m PyQt5.uic.pyuic -x Tasarim/ekonomi.ui -o ekonomi.py
+python -m PyQt5.uic.pyuic -x Tasarim/cevre.ui -o cevre.py
+python -m PyQt5.uic.pyuic -x Tasarim/tarim.ui -o tarim.py
+python -m PyQt5.uic.pyuic -x Tasarim/yasam.ui -o yasam.py
+python -m PyQt5.uic.pyuic -x Tasarim/enerji.ui -o enerji.py
+
+İndirilmesi Gereken Kütüphaneler ve Kodları:
+pip 	 : python -m pip install --upgrade pip
+selenium : pip install selenium
+PyQT5	 : pip install pyqt5
+sqlite3  : pip install pysqlite3
+hashlib  : pip install hashlib
+
+
+
+

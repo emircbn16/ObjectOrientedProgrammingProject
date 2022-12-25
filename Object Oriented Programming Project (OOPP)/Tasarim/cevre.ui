@@ -199,6 +199,10 @@ border-radius:21px;</string>
     <property name="text">
      <string>Su Üretiminin Kaynaklara Göre Dağılımı</string>
     </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Images/Icon/uretimikon.png</normaloff>Images/Icon/uretimikon.png</iconset>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_3">
     <property name="geometry">
@@ -232,6 +236,10 @@ border-radius:21px;</string>
     <property name="text">
      <string>Günlük Su Üretimi</string>
     </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Images/Icon/su.png</normaloff>Images/Icon/su.png</iconset>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_4">
     <property name="geometry">
@@ -264,6 +272,10 @@ border-radius:21px;</string>
     </property>
     <property name="text">
      <string>Barajların Doluluk Oranları</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Images/Icon/barajikon.png</normaloff>Images/Icon/barajikon.png</iconset>
     </property>
    </widget>
    <widget class="QLabel" name="label_8">
@@ -321,6 +333,10 @@ border-radius:21px;
     <property name="text">
      <string>Hava Kalitesi Ölçüm Değerleri</string>
     </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Images/Icon/havaikon.png</normaloff>Images/Icon/havaikon.png</iconset>
+    </property>
    </widget>
    <widget class="QLabel" name="label_11">
     <property name="geometry">
@@ -368,35 +384,6 @@ border-radius:21px;
      <string>İndirmek İstediğiniz Veriyi Seçiniz</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="btn_geri">
-    <property name="geometry">
-     <rect>
-      <x>370</x>
-      <y>780</y>
-      <width>25</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>11</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-      <underline>false</underline>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color:rgb(0,0,0)
-</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="icon">
-     <iconset>
-      <normaloff>Images/geri.png</normaloff>Images/geri.png</iconset>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
@@ -417,6 +404,33 @@ border-radius:21px;
     </property>
     <property name="text">
      <string> su miktarının dağılımı.</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_geri">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>780</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>BusyCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image:url(:/images/Images/Icon/geri.png)</string>
+    </property>
+    <property name="text">
+     <string/>
     </property>
    </widget>
   </widget>

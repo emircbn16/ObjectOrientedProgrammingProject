@@ -128,9 +128,9 @@ border-image: url(:/images/Images/background.png);</string>
    <widget class="QPushButton" name="btn_ekle">
     <property name="geometry">
      <rect>
-      <x>70</x>
+      <x>39</x>
       <y>460</y>
-      <width>150</width>
+      <width>180</width>
       <height>50</height>
      </rect>
     </property>
@@ -143,6 +143,9 @@ border-image: url(:/images/Images/background.png);</string>
       <bold>true</bold>
      </font>
     </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
     <property name="focusPolicy">
      <enum>Qt::ClickFocus</enum>
     </property>
@@ -152,10 +155,10 @@ font: 75 10pt &quot;Tahoma&quot;;
 font-weight: bold;
 color: white;
 background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(0, 128, 128), stop:1 rgb(0, 0, 255));
-border-radius:10px;
+border-radius:20px;
 }
 QPushButton:hover {
-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(0, 255, 255), stop:1 rgb(0, 128, 128));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(0, 0, 255), stop:1 rgb(0,128,200));
 }
 QPushButton:pressed {
 background-color:rgb(82, 142, 191);
@@ -164,13 +167,20 @@ background-color:rgb(82, 142, 191);
     <property name="text">
      <string>KULLANICI EKLE</string>
     </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Images/Icon/ekleikon.png</normaloff>Images/Icon/ekleikon.png</iconset>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
    </widget>
    <widget class="QPushButton" name="btn_sil">
     <property name="geometry">
      <rect>
-      <x>250</x>
+      <x>260</x>
       <y>460</y>
-      <width>150</width>
+      <width>170</width>
       <height>50</height>
      </rect>
     </property>
@@ -183,6 +193,9 @@ background-color:rgb(82, 142, 191);
       <bold>true</bold>
      </font>
     </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
     <property name="focusPolicy">
      <enum>Qt::ClickFocus</enum>
     </property>
@@ -192,10 +205,10 @@ font: 75 10pt &quot;Tahoma&quot;;
 font-weight: bold;
 color: white;
 background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(0, 128, 128), stop:1 rgb(0, 0, 255));
-border-radius:10px;
+border-radius:20px;
 }
 QPushButton:hover {
-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(0, 255, 255), stop:1 rgb(0, 128, 128));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(0, 0, 255), stop:1 rgb(0,128,200));
 }
 QPushButton:pressed {
 background-color:rgb(82, 142, 191);
@@ -203,6 +216,10 @@ background-color:rgb(82, 142, 191);
     </property>
     <property name="text">
      <string>KULLANICI SİL</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Images/Icon/silikon.png</normaloff>Images/Icon/silikon.png</iconset>
     </property>
    </widget>
    <widget class="QLabel" name="lbl_login_3">
@@ -253,9 +270,9 @@ background-color:rgb(82, 142, 191);
    <widget class="QPushButton" name="btn_guncelle">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>530</y>
-      <width>200</width>
+      <x>115</x>
+      <y>540</y>
+      <width>220</width>
       <height>50</height>
      </rect>
     </property>
@@ -268,8 +285,14 @@ background-color:rgb(82, 142, 191);
       <bold>true</bold>
      </font>
     </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
     <property name="focusPolicy">
      <enum>Qt::ClickFocus</enum>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
@@ -277,10 +300,10 @@ font: 75 10pt &quot;Tahoma&quot;;
 font-weight: bold;
 color: white;
 background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(0, 128, 128), stop:1 rgb(0, 0, 255));
-border-radius:10px;
+border-radius:20px;
 }
 QPushButton:hover {
-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(0, 255, 255), stop:1 rgb(0, 128, 128));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(0, 0, 255), stop:1 rgb(0,128,200));
 }
 QPushButton:pressed {
 background-color:rgb(82, 142, 191);
@@ -289,42 +312,20 @@ background-color:rgb(82, 142, 191);
     <property name="text">
      <string>KULLANICI GÜNCELLE</string>
     </property>
-   </widget>
-   <widget class="QPushButton" name="btn_geri">
-    <property name="geometry">
-     <rect>
-      <x>380</x>
-      <y>780</y>
-      <width>25</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>11</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-      <underline>false</underline>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color:rgb(0,0,0)
-</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
     <property name="icon">
      <iconset>
-      <normaloff>Images/geri.png</normaloff>Images/geri.png</iconset>
+      <normaloff>Images/Icon/g2.png</normaloff>Images/Icon/g2.png</iconset>
+    </property>
+    <property name="autoRepeatDelay">
+     <number>300</number>
     </property>
    </widget>
    <widget class="QPushButton" name="btn_goster">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>600</y>
-      <width>160</width>
+      <x>115</x>
+      <y>610</y>
+      <width>220</width>
       <height>50</height>
      </rect>
     </property>
@@ -336,6 +337,9 @@ background-color:rgb(82, 142, 191);
       <italic>false</italic>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="focusPolicy">
      <enum>Qt::ClickFocus</enum>
@@ -347,10 +351,10 @@ font: 75 12pt &quot;Tahoma&quot;;
 font-weight: bold;
 color: white;
 background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(0, 128, 128), stop:1 rgb(0, 0, 255));
-border-radius:10px;
+border-radius:20px;
 }
 QPushButton:hover {
-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(0, 255, 255), stop:1 rgb(0, 128, 128));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(0, 0, 255), stop:1 rgb(0,128,200));
 }
 QPushButton:pressed {
 background-color:rgb(82, 142, 191);
@@ -359,13 +363,17 @@ background-color:rgb(82, 142, 191);
     <property name="text">
      <string>KULLANICILAR</string>
     </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Images/Icon/kullanicilarikon.png</normaloff>Images/Icon/kullanicilarikon.png</iconset>
+    </property>
    </widget>
    <widget class="QPushButton" name="btn_icerik">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>390</y>
-      <width>160</width>
+      <x>125</x>
+      <y>380</y>
+      <width>200</width>
       <height>50</height>
      </rect>
     </property>
@@ -378,8 +386,14 @@ background-color:rgb(82, 142, 191);
       <bold>true</bold>
      </font>
     </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
     <property name="focusPolicy">
      <enum>Qt::ClickFocus</enum>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/images/Images/in.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
@@ -387,10 +401,10 @@ font: 75 12pt &quot;Tahoma&quot;;
 font-weight: bold;
 color: whitesmoke;
 background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(0, 128, 128), stop:1 rgb(0, 0, 255));
-border-radius:10px;
+border-radius:20px;
 }
 QPushButton:hover {
-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(0, 255, 255), stop:1 rgb(0, 128, 128));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(0, 0, 255), stop:1 rgb(0,128,200));
 }
 QPushButton:pressed {
 background-color:rgb(82, 142, 191);
@@ -398,6 +412,37 @@ background-color:rgb(82, 142, 191);
     </property>
     <property name="text">
      <string>ANA SAYFA</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Images/Icon/anasayfaikon.png</normaloff>Images/Icon/anasayfaikon.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_geri">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>790</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>BusyCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image:url(:/images/Images/Icon/geri.png)</string>
+    </property>
+    <property name="text">
+     <string/>
     </property>
    </widget>
   </widget>

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>402</width>
-    <height>819</height>
+    <width>411</width>
+    <height>825</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -84,9 +84,9 @@ border-radius:20px;</string>
    <widget class="QLabel" name="lbl_login">
     <property name="geometry">
      <rect>
-      <x>110</x>
+      <x>100</x>
       <y>90</y>
-      <width>251</width>
+      <width>261</width>
       <height>55</height>
      </rect>
     </property>
@@ -98,6 +98,9 @@ border-radius:20px;</string>
       <italic>false</italic>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>ForbiddenCursor</cursorShape>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 15 12pt &quot;Microsoft YaHei UI&quot;;
@@ -131,35 +134,6 @@ border-radius:10px;</string>
     </property>
     <property name="text">
      <string>© 2022, Made With By Emir,Doğukan,Ceyhun...</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btn_geri">
-    <property name="geometry">
-     <rect>
-      <x>400</x>
-      <y>800</y>
-      <width>25</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>11</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-      <underline>false</underline>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color:rgb(0,0,0)
-</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="icon">
-     <iconset>
-      <normaloff>Images/geri.png</normaloff>Images/geri.png</iconset>
     </property>
    </widget>
    <widget class="QTableWidget" name="table">
@@ -328,7 +302,7 @@ border-radius:21px;
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../../mail-logo.png</normaloff>../../mail-logo.png</iconset>
+       <normaloff>Images/Icon/mailikon.png</normaloff>Images/Icon/mailikon.png</iconset>
      </property>
     </column>
     <column>
@@ -363,7 +337,7 @@ border-radius:21px;
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../../şifre_resim.png</normaloff>../../şifre_resim.png</iconset>
+       <normaloff>Images/Icon/sifreikon.png</normaloff>Images/Icon/sifreikon.png</iconset>
      </property>
     </column>
     <column>
@@ -399,7 +373,7 @@ border-radius:21px;
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../../ıd_logo.png</normaloff>../../ıd_logo.png</iconset>
+       <normaloff>Images/Icon/IDikon.png</normaloff>Images/Icon/IDikon.png</iconset>
      </property>
     </column>
     <item row="0" column="2">
@@ -414,9 +388,9 @@ border-radius:21px;
    <widget class="QPushButton" name="btn_goster">
     <property name="geometry">
      <rect>
-      <x>130</x>
+      <x>110</x>
       <y>620</y>
-      <width>231</width>
+      <width>251</width>
       <height>51</height>
      </rect>
     </property>
@@ -429,19 +403,21 @@ border-radius:21px;
       <bold>true</bold>
      </font>
     </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
     <property name="focusPolicy">
      <enum>Qt::ClickFocus</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton {font: 75 10pt &quot;Microsoft YaHei UI&quot;;
-font-weight: bold;
-color: rgb(255, 255, 255);
-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(61, 217, 245), stop:1 rgb(240, 53, 218));
-border-style: solid;
-border-radius:21px;
+     <string notr="true">QPushButton {
+color:rgba(255, 255, 255, 210);px:25;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(0, 128, 128), stop:1 rgb(0, 0, 255));
+border-radius:10px;
+
 }
 QPushButton:hover {
-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(0, 255, 255), stop:1 rgb(0, 128, 128));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(0, 0, 255), stop:1 rgb(0, 128, 128));
 }
 QPushButton:pressed {
 background-color:rgb(82, 142, 191);
@@ -449,6 +425,37 @@ background-color:rgb(82, 142, 191);
     </property>
     <property name="text">
      <string>KULLANICILARI GÖSTER</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Images/Icon/kullanicilarikon.png</normaloff>Images/Icon/kullanicilarikon.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_geri">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>790</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>BusyCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image:url(:/images/Images/Icon/geri.png)</string>
+    </property>
+    <property name="text">
+     <string/>
     </property>
    </widget>
   </widget>

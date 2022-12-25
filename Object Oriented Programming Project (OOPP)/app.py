@@ -22,7 +22,6 @@ import time     # Uygulamamızın çalışma süresini belirlemek için kullanı
 import sys, res # sys modülü ile uygulamamızı kapatıyoruz. res modülü ile uygulamamızın içerisindeki resim dosyalarını ayarlıyoruz.  
 import hashlib  # Şifrelerimizi hashleyerek veritabanına kaydediyoruz. ***pip install hashlib*** komutu ile kütüphaneyi indirmeniz gerekmektedir.
 import sqlite3  # Veritabanı işlemlerimizi gerçekleştiriyoruz. ***pip install pysqlite3***  komutu ile kütüphaneyi indirmeniz gerekmektedir.
-import os
 # Uygulamamızın ana arayüzünü oluşturuyoruz.
 class Giris(QDialog):
     def __init__(self):
@@ -35,7 +34,9 @@ class Giris(QDialog):
         # Giriş butonuna tıklandığında loginfunction fonksiyonunu çalıştırıyoruz.
         self.login.clicked.connect(self.loginfunction)  
         # Kayıt Ol butonuna tıklandığında gotocreate fonksiyonunu çalıştırıyoruz.        
-        self.signup.clicked.connect(self.gotocreate)            
+        self.signup.clicked.connect(self.gotocreate)   
+        # Çıkış butonuna tıklandığında exitfunction fonksiyonunu çalıştırıyoruz.
+        self.exit.clicked.connect(self.exitfunction)  
     def loginfunction(self):
         # Giriş ekranındaki email alanını alıyoruz.
         email=self.email.text()
@@ -89,6 +90,9 @@ class Giris(QDialog):
             arayuz = Main()
             widget.addWidget(arayuz)
             widget.setCurrentIndex(widget.currentIndex()+1)
+    def exitfunction(self):
+        # Uygulamamızı kapatıyoruz.
+        sys.exit(app.exec_())
 class KayitOl(QDialog):
     def __init__(self):
         # Kayıt Ol ekranını oluşturuyoruz.
@@ -565,10 +569,11 @@ class AfetveAcil(QDialog,QtWidgets.QMainWindow):
         time.sleep(5)
         # İndirme işlemini tamamladıktan sonra tarayıcıyı simge durumuna getiriyoruz.
         self.browser.minimize_window()
-        # İndirme işlemini tamamladıktan sonra bilgi mesajı veriyoruz.
-        QMessageBox.information(self, "Bilgi", "İndirme Tamamlandı")
         # İndirme işlemini tamamladıktan sonra tarayıcıyı kapatıyoruz.
         self.browser.quit()
+        # İndirme işlemini tamamladıktan sonra bilgi mesajı veriyoruz.
+        QMessageBox.information(self, "Bilgi", "İndirme Tamamlandı")
+
         # Butonlarımızın fonksiyonlarını çağırıyoruz.
         self.ui.btn_geri.clicked.connect(self.Menufunction)
     def Menufunction(self):
@@ -598,9 +603,10 @@ class Muhtarlik(QDialog,QtWidgets.QMainWindow):
         time.sleep(5)
         # İndirme işlemini tamamladıktan sonra tarayıcıyı simge durumuna getiriyoruz.
         self.browser.minimize_window()
-        QMessageBox.information(self, "Bilgi", "İndirme Tamamlandı")
         # İndirme işlemini tamamladıktan sonra tarayıcıyı kapatıyoruz.
         self.browser.quit()
+        # İndirme işlemini tamamladıktan sonra bilgi mesajı veriyoruz.
+        QMessageBox.information(self, "Bilgi", "İndirme Tamamlandı")
         # Butonlarımızın fonksiyonlarını çağırıyoruz.
         self.ui.btn_geri.clicked.connect(self.Menufunction)
     def Menufunction(self):
@@ -630,9 +636,10 @@ class Itfaiye(QDialog,QtWidgets.QMainWindow):
         time.sleep(5)
         # İndirme işlemini tamamladıktan sonra tarayıcıyı simge durumuna getiriyoruz.
         self.browser.minimize_window()
-        QMessageBox.information(self, "Bilgi", "İndirme Tamamlandı")
         # İndirme işlemini tamamladıktan sonra tarayıcıyı kapatıyoruz.
         self.browser.quit()
+        # İndirme işlemini tamamladıktan sonra bilgi mesajı veriyoruz.
+        QMessageBox.information(self, "Bilgi", "İndirme Tamamlandı")
         # Butonlarımızın fonksiyonlarını çağırıyoruz.
         self.ui.btn_geri.clicked.connect(self.Menufunction)
     def Menufunction(self):
@@ -662,9 +669,10 @@ class Itfaiye2(QDialog,QtWidgets.QMainWindow):
         time.sleep(5)
         # İndirme işlemini tamamladıktan sonra tarayıcıyı simge durumuna getiriyoruz.
         self.browser.minimize_window()
-        QMessageBox.information(self, "Bilgi", "İndirme Tamamlandı")
         # İndirme işlemini tamamladıktan sonra tarayıcıyı kapatıyoruz.
         self.browser.quit()
+        # İndirme işlemini tamamladıktan sonra bilgi mesajı veriyoruz.
+        QMessageBox.information(self, "Bilgi", "İndirme Tamamlandı")
         # Butonlarımızın fonksiyonlarını çağırıyoruz.
         self.ui.btn_geri.clicked.connect(self.Menufunction)
     def Menufunction(self):
@@ -737,9 +745,10 @@ class SuUretim(QDialog,QtWidgets.QMainWindow):
         time.sleep(5)
         # İndirme işlemini tamamladıktan sonra tarayıcıyı simge durumuna alıyoruz.
         self.browser.minimize_window()
-        QMessageBox.information(self, "Bilgi", "İndirme Tamamlandı")
         # İndirme işlemini tamamladıktan sonra tarayıcıyı kapatıyoruz.
         self.browser.quit()
+        # İndirme işlemini tamamladıktan sonra kullanıcıya bilgi veriyoruz.
+        QMessageBox.information(self, "Bilgi", "İndirme Tamamlandı")
         # Butonlarımızın fonksiyonlarını çağırıyoruz.
         self.ui.btn_geri.clicked.connect(self.Menufunction)
     def Menufunction(self):
@@ -801,9 +810,10 @@ class Baraj(QDialog,QtWidgets.QMainWindow):
         time.sleep(5)
         # İndirme işlemini tamamladıktan sonra tarayıcıyı simge durumuna alıyoruz.
         self.browser.minimize_window()
-        QMessageBox.information(self, "Bilgi", "İndirme Tamamlandı")
         # İndirme işlemini tamamladıktan sonra tarayıcıyı kapatıyoruz.
         self.browser.quit()
+        # İndirme işlemini tamamladıktan sonra kullanıcıya bilgi veriyoruz.
+        QMessageBox.information(self, "Bilgi", "İndirme Tamamlandı")
         # Butonlarımızın fonksiyonlarını çağırıyoruz.
         self.ui.btn_geri.clicked.connect(self.Menufunction)
     def Menufunction(self):
@@ -833,9 +843,10 @@ class Hava(QDialog,QtWidgets.QMainWindow):
         time.sleep(5)
         # İndirme işlemini tamamladıktan sonra tarayıcıyı simge durumuna alıyoruz.
         self.browser.minimize_window()
-        QMessageBox.information(self, "Bilgi", "İndirme Tamamlandı")
         # İndirme işlemini tamamladıktan sonra tarayıcıyı kapatıyoruz.
         self.browser.quit()
+        # İndirme işlemini tamamladıktan sonra kullanıcıya bilgi veriyoruz.
+        QMessageBox.information(self, "Bilgi", "İndirme Tamamlandı")
         # Butonlarımızın fonksiyonlarını çağırıyoruz.
         self.ui.btn_geri.clicked.connect(self.Menufunction)
     def Menufunction(self):
@@ -908,9 +919,10 @@ class Metro(QDialog,QtWidgets.QMainWindow):
         time.sleep(5)
         # İndirme işlemini tamamladıktan sonra tarayıcıyı simge durumuna getiriyoruz.
         self.browser.minimize_window()
-        QMessageBox.information(self, "Bilgi", "İndirme Tamamlandı")
         # İndirme işlemini tamamladıktan sonra tarayıcıyı kapatıyoruz.
         self.browser.quit()
+        # İndirme işlemini tamamladıktan sonra bilgi mesajı veriyoruz.
+        QMessageBox.information(self, "Bilgi", "İndirme Tamamlandı")
         # Butonumuzun fonksiyonunu çağırıyoruz.
         self.ui.btn_geri.clicked.connect(self.Menufunction)
     def Menufunction(self):
@@ -940,9 +952,10 @@ class Izban(QDialog,QtWidgets.QMainWindow):
         time.sleep(5)
         # İndirme işlemini tamamladıktan sonra tarayıcıyı simge durumuna getiriyoruz.
         self.browser.minimize_window()
-        QMessageBox.information(self, "Bilgi", "İndirme Tamamlandı")
         # İndirme işlemini tamamladıktan sonra tarayıcıyı kapatıyoruz.
         self.browser.quit()
+        # İndirme işlemini tamamladıktan sonra bilgi mesajı veriyoruz.
+        QMessageBox.information(self, "Bilgi", "İndirme Tamamlandı")
         # Butonumuzun fonksiyonunu çağırıyoruz.
         self.ui.btn_geri.clicked.connect(self.Menufunction)
     def Menufunction(self):
@@ -972,9 +985,10 @@ class Gunes(QDialog,QtWidgets.QMainWindow):
         time.sleep(5)
         # İndirme işlemini tamamladıktan sonra tarayıcıyı simge durumuna getiriyoruz.
         self.browser.minimize_window()
-        QMessageBox.information(self, "Bilgi", "İndirme Tamamlandı")
         # İndirme işlemini tamamladıktan sonra tarayıcıyı kapatıyoruz.
         self.browser.quit()
+        # İndirme işlemini tamamladıktan sonra bilgi mesajı veriyoruz.
+        QMessageBox.information(self, "Bilgi", "İndirme Tamamlandı")
         # Butonumuzun fonksiyonunu çağırıyoruz.
         self.ui.btn_geri.clicked.connect(self.Menufunction)
     def Menufunction(self):
@@ -1004,9 +1018,10 @@ class Elektrik(QDialog,QtWidgets.QMainWindow):
         time.sleep(5)
         # İndirme işlemini tamamladıktan sonra tarayıcıyı simge durumuna getiriyoruz.
         self.browser.minimize_window()
-        QMessageBox.information(self, "Bilgi", "İndirme Tamamlandı")
         # İndirme işlemini tamamladıktan sonra tarayıcıyı kapatıyoruz.
         self.browser.quit()
+        # İndirme işlemini tamamladıktan sonra bilgi mesajı veriyoruz.
+        QMessageBox.information(self, "Bilgi", "İndirme Tamamlandı")
         # Butonumuzun fonksiyonunu çağırıyoruz.
         self.ui.btn_geri.clicked.connect(self.Menufunction)
     def Menufunction(self):
@@ -1079,9 +1094,10 @@ class Pazar(QDialog,QtWidgets.QMainWindow):
         time.sleep(5)
         # İndirme işlemini tamamladıktan sonra tarayıcıyı kapatıyoruz.
         self.browser.minimize_window()
-        QMessageBox.information(self, "Bilgi", "İndirme Tamamlandı")
         # İndirme işlemini tamamladıktan sonra tarayıcıyı kapatıyoruz.
         self.browser.quit()
+        # İndirme işlemini tamamladıktan sonra tarayıcıyı kapatıyoruz.
+        QMessageBox.information(self, "Bilgi", "İndirme Tamamlandı")
         # Butonumuzun fonksiyonunu çağırıyoruz.
         self.ui.btn_geri.clicked.connect(self.Menufunction)
     def Menufunction(self):
@@ -1111,9 +1127,10 @@ class Eczane(QDialog,QtWidgets.QMainWindow):
         time.sleep(5)
         # İndirme işlemini tamamladıktan sonra tarayıcıyı kapatıyoruz.
         self.browser.minimize_window()
-        QMessageBox.information(self, "Bilgi", "İndirme Tamamlandı")
         # İndirme işlemini tamamladıktan sonra tarayıcıyı kapatıyoruz.
-        self.browser.quit()
+        self.browser.quit()       
+        # İndirme işlemini tamamladıktan sonra tarayıcıyı kapatıyoruz.
+        QMessageBox.information(self, "Bilgi", "İndirme Tamamlandı")
         # Butonumuzun fonksiyonunu çağırıyoruz.
         self.ui.btn_geri.clicked.connect(self.Menufunction)
     def Menufunction(self):
@@ -1143,9 +1160,10 @@ class Sanat(QDialog,QtWidgets.QMainWindow):
         time.sleep(5)
         # İndirme işlemini tamamladıktan sonra tarayıcıyı kapatıyoruz.
         self.browser.minimize_window()
-        QMessageBox.information(self, "Bilgi", "İndirme Tamamlandı")
         # İndirme işlemini tamamladıktan sonra tarayıcıyı kapatıyoruz.
         self.browser.quit()
+        # İndirme işlemini tamamladıktan sonra tarayıcıyı kapatıyoruz.
+        QMessageBox.information(self, "Bilgi", "İndirme Tamamlandı")
         # Butonumuzun fonksiyonunu çağırıyoruz.
         self.ui.btn_geri.clicked.connect(self.Menufunction)
     def Menufunction(self): 
@@ -1175,9 +1193,10 @@ class Toplum(QDialog,QtWidgets.QMainWindow):
         time.sleep(5)
         # İndirme işlemini tamamladıktan sonra tarayıcıyı kapatıyoruz.
         self.browser.minimize_window()
-        QMessageBox.information(self, "Bilgi", "İndirme Tamamlandı")
         # İndirme işlemini tamamladıktan sonra tarayıcıyı kapatıyoruz.
         self.browser.quit()
+        # İndirme işlemini tamamladıktan sonra tarayıcıyı kapatıyoruz.
+        QMessageBox.information(self, "Bilgi", "İndirme Tamamlandı")
         # Butonumuzun fonksiyonunu çağırıyoruz.
         self.ui.btn_geri.clicked.connect(self.Menufunction)
     def Menufunction(self):
@@ -1275,8 +1294,8 @@ class Balik(QDialog):
         self.browser.find_element_by_xpath("//*[@id='dataset-resources']/ul/li[18]/div/ul/li[2]/a").click()
         time.sleep(5)
         self.browser.minimize_window()
-        QMessageBox.information(self, "Bilgi", "İndirme Tamamlandı")
         self.browser.quit()
+        QMessageBox.information(self, "Bilgi", "İndirme Tamamlandı")
         self.ui.btn_geri.clicked.connect(self.Menufunction)
     def Menufunction(self):
         # Balık ekranından Main ekranına geçiş yapılıyor.
@@ -1302,8 +1321,8 @@ class Hal(QDialog):
         self.browser.find_element_by_xpath("//*[@id='dataset-resources']/ul/li[19]/div/ul/li[2]/a").click()
         time.sleep(5)
         self.browser.minimize_window()
-        QMessageBox.information(self, "Bilgi", "İndirme Tamamlandı")
         self.browser.quit()
+        QMessageBox.information(self, "Bilgi", "İndirme Tamamlandı")
         self.ui.btn_geri.clicked.connect(self.Menufunction)
     def Menufunction(self):
         # Hal ekranından Main ekranına geçiş yapılıyor.
@@ -1329,8 +1348,8 @@ class Otopark(QDialog):
         self.browser.find_element_by_xpath("//*[@id='dataset-resources']/ul/li[1]/div/ul/li[2]/a").click()
         time.sleep(5)
         self.browser.minimize_window()
+        self.browser.quit()        
         QMessageBox.information(self, "Bilgi", "İndirme Tamamlandı")
-        self.browser.quit()
         self.ui.btn_geri.clicked.connect(self.Menufunction)
     def Menufunction(self):
         # Otopark ekranından Main ekranına geçiş yapılıyor.
@@ -1400,8 +1419,8 @@ class Hayvancilik(QDialog):
         self.browser.find_element_by_xpath("//*[@id='dataset-resources']/ul/li/div/ul/li[2]/a").click()
         time.sleep(5)
         self.browser.minimize_window()
+        self.browser.quit()  
         QMessageBox.information(self, "Bilgi", "İndirme Tamamlandı")
-        self.browser.quit()
         self.ui.btn_geri.clicked.connect(self.Menufunction)
     def Menufunction(self):
         # Hayvancılık ekranından Main ekranına geçiş yapılıyor.
@@ -1428,8 +1447,8 @@ class Aricilik(QDialog):
         self.browser.find_element_by_xpath("//*[@id='dataset-resources']/ul/li/div/ul/li[2]/a").click()
         time.sleep(5)
         self.browser.minimize_window()
-        QMessageBox.information(self, "Bilgi", "İndirme Tamamlandı")
         self.browser.quit()
+        QMessageBox.information(self, "Bilgi", "İndirme Tamamlandı")
         self.ui.btn_geri.clicked.connect(self.Menufunction)
     def Menufunction(self):
         # Arıcılık ekranından Main ekranına geçiş yapılıyor.
@@ -1455,8 +1474,8 @@ class Hal(QDialog):
         self.browser.find_element_by_xpath("//*[@id='dataset-resources']/ul/li[19]/div/ul/li[2]/a").click()
         time.sleep(5)
         self.browser.minimize_window()
-        QMessageBox.information(self, "Bilgi", "İndirme Tamamlandı")
         self.browser.quit()
+        QMessageBox.information(self, "Bilgi", "İndirme Tamamlandı")
         self.ui.btn_geri.clicked.connect(self.Menufunction)
     def Menufunction(self):
         # Hal ekranından Main ekranına geçiş yapılıyor.
@@ -1483,8 +1502,8 @@ class KestaneKanseri(QDialog):
         self.browser.find_element_by_xpath("//*[@id='dataset-resources']/ul/li/div/ul/li[2]/a").click()
         time.sleep(5)
         self.browser.minimize_window()
-        QMessageBox.information(self, "Bilgi", "İndirme Tamamlandı")
         self.browser.quit()
+        QMessageBox.information(self, "Bilgi", "İndirme Tamamlandı")
         self.ui.btn_geri.clicked.connect(self.Menufunction)
     def Menufunction(self):
         # Kestane Kanseri ekranından Main ekranına geçiş yapılıyor.
@@ -1548,6 +1567,7 @@ class Social(QDialog):
         self.browserProfile.add_experimental_option('prefs', {'intl.accept_languages':'en,en_US'})
         self.browser = webdriver.Chrome('chromedriver.exe', chrome_options=self.browserProfile)
         self.browser.get('https://github.com/giantgorilla')
+        self.browser.maximize_window()
         time.sleep(3)
         self.browser.quit()
     def GithubEfunction(self):
@@ -1556,6 +1576,7 @@ class Social(QDialog):
         self.browserProfile.add_experimental_option('prefs', {'intl.accept_languages':'en,en_US'})
         self.browser = webdriver.Chrome('chromedriver.exe', chrome_options=self.browserProfile)
         self.browser.get('https://github.com/emircbn16')
+        self.browser.maximize_window()
         time.sleep(3)
         self.browser.quit() 
 
@@ -1565,6 +1586,7 @@ class Social(QDialog):
         self.browserProfile.add_experimental_option('prefs', {'intl.accept_languages':'en,en_US'})
         self.browser = webdriver.Chrome('chromedriver.exe', chrome_options=self.browserProfile)
         self.browser.get('https://github.com/yalcinkayaceyhun')
+        self.browser.maximize_window()
         time.sleep(3)
         self.browser.quit()       
 class Info(QDialog):
@@ -1582,7 +1604,7 @@ def show_main_window(app, widget): # ChatGPT3 tarafından yeniden düzenlenmişt
     # Ana ekranımızı oluşturuyoruz.
     mainwindow = Giris()
     widget.addWidget(mainwindow)
-    # widget.setWindowFlags(QtCore.Qt.FramelessWindowHint)
+    widget.setWindowFlags(QtCore.Qt.FramelessWindowHint)
     widget.setFixedSize(400, 815)
     widget.setWindowTitle("OOPP")
     widget.setWindowIcon(QtGui.QIcon("Tasarim\Images\logo.ico"))

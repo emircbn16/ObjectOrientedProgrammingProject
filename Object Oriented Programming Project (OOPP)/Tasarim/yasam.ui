@@ -198,6 +198,10 @@ border-radius:21px;</string>
     <property name="text">
      <string>Semt Pazar Yerleri</string>
     </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Images/Icon/muhtarikon.png</normaloff>Images/Icon/muhtarikon.png</iconset>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_3">
     <property name="geometry">
@@ -228,6 +232,10 @@ border-radius:21px;</string>
     <property name="text">
      <string>Nöbetçi Eczaneler ve Eczane Listesi</string>
     </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Images/Icon/eczaneikon.png</normaloff>Images/Icon/eczaneikon.png</iconset>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_4">
     <property name="geometry">
@@ -257,6 +265,10 @@ border-radius:21px;</string>
     </property>
     <property name="text">
      <string>Kültür Sanat Etkinlikleri </string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Images/Icon/sanatikon.png</normaloff>Images/Icon/sanatikon.png</iconset>
     </property>
    </widget>
    <widget class="QLabel" name="label_8">
@@ -310,6 +322,10 @@ border-radius:21px;</string>
     <property name="text">
      <string>Toplum Sağlığı Eğitimleri</string>
     </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Images/Icon/sağlıkikon.png</normaloff>Images/Icon/sağlıkikon.png</iconset>
+    </property>
    </widget>
    <widget class="QLabel" name="label_11">
     <property name="geometry">
@@ -361,10 +377,10 @@ border-radius:21px;</string>
    <widget class="QPushButton" name="btn_geri">
     <property name="geometry">
      <rect>
-      <x>370</x>
+      <x>340</x>
       <y>780</y>
-      <width>25</width>
-      <height>25</height>
+      <width>50</width>
+      <height>50</height>
      </rect>
     </property>
     <property name="font">
@@ -376,24 +392,13 @@ border-radius:21px;</string>
      </font>
     </property>
     <property name="cursor">
-     <cursorShape>WaitCursor</cursorShape>
+     <cursorShape>BusyCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">btn_geri {
-    background-color: rgba(32, 255, 8, 95);
-    margin-bottom: 3px;
-}
-btn_geri:hover{
-    background-color: rgba(32, 8, 255, 95);
-}
-</string>
+     <string notr="true">border-image:url(:/images/Images/Icon/geri.png)</string>
     </property>
     <property name="text">
      <string/>
-    </property>
-    <property name="icon">
-     <iconset>
-      <normaloff>Images/geri.png</normaloff>Images/geri.png</iconset>
     </property>
    </widget>
    <widget class="QLabel" name="label_4">

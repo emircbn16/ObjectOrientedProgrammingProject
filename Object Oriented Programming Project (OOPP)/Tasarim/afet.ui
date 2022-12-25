@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>409</width>
-    <height>812</height>
+    <height>814</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -309,35 +309,6 @@ QPushButton#pushButton_2:pressed, #pushButton_3:pressed, #pushButton_4:pressed, 
      <string>yapılan müdahale sayılarını içerir.</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="btn_geri">
-    <property name="geometry">
-     <rect>
-      <x>370</x>
-      <y>780</y>
-      <width>25</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>11</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-      <underline>false</underline>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color:rgb(0,0,0)
-</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="icon">
-     <iconset>
-      <normaloff>Images/geri.png</normaloff>Images/geri.png</iconset>
-    </property>
-   </widget>
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
@@ -393,6 +364,10 @@ border-radius:21px;</string>
     <property name="text">
      <string>Afet Ve Acil Durum Toplanma Alanları</string>
     </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Images/Icon/afetikon.png</normaloff>Images/Icon/afetikon.png</iconset>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_3">
     <property name="geometry">
@@ -425,6 +400,10 @@ border-radius:21px;</string>
     </property>
     <property name="text">
      <string>Muhtarlıklar</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Images/Icon/muhtarikon.png</normaloff>Images/Icon/muhtarikon.png</iconset>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_4">
@@ -460,6 +439,10 @@ border-radius:21px;
     <property name="text">
      <string>İtfaiye Eğitim Hizmetleri</string>
     </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Images/Icon/itfay.png</normaloff>Images/Icon/itfay.png</iconset>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_5">
     <property name="geometry">
@@ -492,6 +475,37 @@ border-radius:21px;</string>
     </property>
     <property name="text">
      <string>İtfaiye Acil Müdahale Sayıları</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Images/Icon/itfaiyeveacil.png</normaloff>Images/Icon/itfaiyeveacil.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_geri">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>780</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>BusyCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image:url(:/images/Images/Icon/geri.png)</string>
+    </property>
+    <property name="text">
+     <string/>
     </property>
    </widget>
   </widget>

@@ -144,6 +144,9 @@ border-image: url(:/images/Images/background.png);</string>
       <bold>false</bold>
      </font>
     </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
     <property name="focusPolicy">
      <enum>Qt::ClickFocus</enum>
     </property>
@@ -160,6 +163,10 @@ background-color:rgb(82, 142, 191);
     </property>
     <property name="text">
      <string>ICERIK</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Images/Icon/icerikikon.png</normaloff>Images/Icon/icerikikon.png</iconset>
     </property>
    </widget>
    <widget class="QPushButton" name="btn_social">
@@ -179,6 +186,9 @@ background-color:rgb(82, 142, 191);
       <bold>false</bold>
      </font>
     </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
     <property name="focusPolicy">
      <enum>Qt::ClickFocus</enum>
     </property>
@@ -195,6 +205,10 @@ background-color:rgb(82, 142, 191);
     </property>
     <property name="text">
      <string>SOCIAL</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Images/Icon/likeikon.png</normaloff>Images/Icon/likeikon.png</iconset>
     </property>
    </widget>
    <widget class="QPushButton" name="btn_info">
@@ -214,6 +228,9 @@ background-color:rgb(82, 142, 191);
       <bold>false</bold>
      </font>
     </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
     <property name="focusPolicy">
      <enum>Qt::ClickFocus</enum>
     </property>
@@ -230,6 +247,10 @@ background-color:rgb(82, 142, 191);
     </property>
     <property name="text">
      <string>INFO</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Images/Icon/infoikon.png</normaloff>Images/Icon/infoikon.png</iconset>
     </property>
    </widget>
    <widget class="QLabel" name="lbl_login_3">
@@ -281,10 +302,10 @@ background-color:rgb(82, 142, 191);
    <widget class="QPushButton" name="btn_geri">
     <property name="geometry">
      <rect>
-      <x>390</x>
-      <y>810</y>
-      <width>25</width>
-      <height>25</height>
+      <x>370</x>
+      <y>790</y>
+      <width>50</width>
+      <height>50</height>
      </rect>
     </property>
     <property name="font">
@@ -295,17 +316,14 @@ background-color:rgb(82, 142, 191);
       <underline>false</underline>
      </font>
     </property>
+    <property name="cursor">
+     <cursorShape>BusyCursor</cursorShape>
+    </property>
     <property name="styleSheet">
-     <string notr="true">color:rgb(0,0,0);
-border-image: url(:/images/Images/geri.png);
-</string>
+     <string notr="true">border-image:url(:/images/Images/Icon/geri.png)</string>
     </property>
     <property name="text">
      <string/>
-    </property>
-    <property name="icon">
-     <iconset>
-      <normaloff>Images/geri.png</normaloff>Images/geri.png</iconset>
     </property>
    </widget>
   </widget>

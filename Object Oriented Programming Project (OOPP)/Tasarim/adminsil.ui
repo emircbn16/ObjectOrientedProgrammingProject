@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>429</width>
-    <height>819</height>
+    <width>407</width>
+    <height>827</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -102,35 +102,6 @@ border-radius:20px;</string>
      <string>© 2022, Made With By Emir,Doğukan,Ceyhun...</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="btn_geri">
-    <property name="geometry">
-     <rect>
-      <x>400</x>
-      <y>790</y>
-      <width>25</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>11</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-      <underline>false</underline>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color:rgb(0,0,0)
-</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="icon">
-     <iconset>
-      <normaloff>Images/geri.png</normaloff>Images/geri.png</iconset>
-    </property>
-   </widget>
    <widget class="QPushButton" name="btn_sil">
     <property name="geometry">
      <rect>
@@ -161,7 +132,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb
 border-radius:10px;
 }
 QPushButton:hover {
-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(0, 255, 255), stop:1 rgb(0, 128, 128));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(0, 0, 255), stop:1 rgb(0,128,128));
 }
 QPushButton:pressed {
 background-color:rgb(82, 142, 191);
@@ -170,13 +141,17 @@ background-color:rgb(82, 142, 191);
     <property name="text">
      <string>Kullanıcı Sil</string>
     </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Images/Icon/silikon.png</normaloff>Images/Icon/silikon.png</iconset>
+    </property>
    </widget>
    <widget class="QPushButton" name="btn_goster">
     <property name="geometry">
      <rect>
-      <x>80</x>
+      <x>60</x>
       <y>620</y>
-      <width>80</width>
+      <width>141</width>
       <height>40</height>
      </rect>
     </property>
@@ -192,6 +167,12 @@ background-color:rgb(82, 142, 191);
     <property name="focusPolicy">
      <enum>Qt::ClickFocus</enum>
     </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
 font: 75 12pt &quot;Tahoma&quot;;
@@ -201,7 +182,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb
 border-radius:10px;
 }
 QPushButton:hover {
-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(0, 255, 255), stop:1 rgb(0, 128, 128));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(0, 0, 255), stop:1 rgb(0,128,128));
 }
 QPushButton:pressed {
 qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(0, 255, 255), stop:1 rgb(0, 128, 128));
@@ -209,6 +190,19 @@ qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(0, 255, 255), sto
     </property>
     <property name="text">
      <string>Listele</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Images/Icon/listeleikon.png</normaloff>Images/Icon/listeleikon.png</iconset>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
     </property>
    </widget>
    <widget class="QTableWidget" name="table">
@@ -340,7 +334,7 @@ border-radius:21px;</string>
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../../mail-logo.png</normaloff>../../mail-logo.png</iconset>
+       <normaloff>Images/Icon/mailikon.png</normaloff>Images/Icon/mailikon.png</iconset>
      </property>
     </column>
     <column>
@@ -349,7 +343,7 @@ border-radius:21px;</string>
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../../şifre_resim.png</normaloff>../../şifre_resim.png</iconset>
+       <normaloff>Images/Icon/sifreikon.png</normaloff>Images/Icon/sifreikon.png</iconset>
      </property>
     </column>
     <column>
@@ -361,7 +355,7 @@ border-radius:21px;</string>
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../../ıd_logo.png</normaloff>../../ıd_logo.png</iconset>
+       <normaloff>Images/Icon/IDikon.png</normaloff>Images/Icon/IDikon.png</iconset>
      </property>
     </column>
    </widget>
@@ -394,6 +388,33 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb
     </property>
     <property name="text">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Kullanıcı Silme Paneli&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_geri">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>790</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>BusyCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image:url(:/images/Images/Icon/geri.png)</string>
+    </property>
+    <property name="text">
+     <string/>
     </property>
    </widget>
   </widget>

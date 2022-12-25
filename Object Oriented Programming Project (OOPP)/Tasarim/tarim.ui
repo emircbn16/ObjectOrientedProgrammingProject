@@ -195,6 +195,10 @@ border-radius:21px;</string>
     <property name="text">
      <string>Küçükbaş Hayvan Desteği</string>
     </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Images/Icon/hayvanikon.png</normaloff>Images/Icon/hayvanikon.png</iconset>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_3">
     <property name="geometry">
@@ -225,6 +229,10 @@ border-radius:21px;</string>
     <property name="text">
      <string>Arıcılık Desteği</string>
     </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Images/Icon/arıikon.png</normaloff>Images/Icon/arıikon.png</iconset>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton_4">
     <property name="geometry">
@@ -254,6 +262,10 @@ border-radius:21px;</string>
     </property>
     <property name="text">
      <string>Sebze ve Meyve Hal Fiyatları</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Images/Icon/sebzeikon.png</normaloff>Images/Icon/sebzeikon.png</iconset>
     </property>
    </widget>
    <widget class="QLabel" name="label_8">
@@ -307,6 +319,10 @@ border-radius:21px;</string>
     <property name="text">
      <string>Kestane Kanseri İle Mücadele Desteği</string>
     </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Images/Icon/kanserikon.png</normaloff>Images/Icon/kanserikon.png</iconset>
+    </property>
    </widget>
    <widget class="QLabel" name="label_11">
     <property name="geometry">
@@ -350,38 +366,6 @@ border-radius:21px;</string>
     </property>
     <property name="text">
      <string> İndirmek İstediğiniz Veriyi Seçiniz</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btn_geri">
-    <property name="geometry">
-     <rect>
-      <x>370</x>
-      <y>780</y>
-      <width>25</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>11</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-      <underline>false</underline>
-     </font>
-    </property>
-    <property name="cursor">
-     <cursorShape>WaitCursor</cursorShape>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color:rgb(0,0,0)
-</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="icon">
-     <iconset>
-      <normaloff>Images/geri.png</normaloff>Images/geri.png</iconset>
     </property>
    </widget>
    <widget class="QLabel" name="label_12">
@@ -536,6 +520,33 @@ border-radius:21px;</string>
     </property>
     <property name="text">
      <string>veri setidir.</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_geri">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>780</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>BusyCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image:url(:/images/Images/Icon/geri.png)</string>
+    </property>
+    <property name="text">
+     <string/>
     </property>
    </widget>
   </widget>

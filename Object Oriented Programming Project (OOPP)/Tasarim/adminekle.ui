@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>384</width>
+    <width>400</width>
     <height>819</height>
    </rect>
   </property>
@@ -109,7 +109,7 @@ border-radius:20px;</string>
    <widget class="QLabel" name="label_11">
     <property name="geometry">
      <rect>
-      <x>39</x>
+      <x>50</x>
       <y>153</y>
       <width>361</width>
       <height>471</height>
@@ -125,7 +125,7 @@ border-radius:20px;</string>
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/images/medyaa.jpg&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(61, 217, 245), stop:1 rgb(240, 53, 218));
+     <string notr="true">background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,10,128), stop:0.55 rgba(235, 148, 10, 255), stop:0.98 rgba(0, 10, 128), stop:1 rgba(0, 10, 128));
 border-radius:35px;</string>
     </property>
     <property name="text">
@@ -135,7 +135,7 @@ border-radius:35px;</string>
    <widget class="QLineEdit" name="line_email">
     <property name="geometry">
      <rect>
-      <x>100</x>
+      <x>110</x>
       <y>295</y>
       <width>255</width>
       <height>55</height>
@@ -151,7 +151,7 @@ border-radius:35px;</string>
      <string notr="true">background-color:rgba(0, 0, 0, 0);
 border:none;
 border-bottom:2px solid rgba(105, 118, 132, 255);
-color:rgba(255, 255, 255, 230);
+color:rgba(255, 255, 255, 255);
 padding-bottom:7px;</string>
     </property>
     <property name="text">
@@ -164,7 +164,7 @@ padding-bottom:7px;</string>
    <widget class="QLineEdit" name="line_sifre">
     <property name="geometry">
      <rect>
-      <x>100</x>
+      <x>110</x>
       <y>390</y>
       <width>255</width>
       <height>55</height>
@@ -180,7 +180,7 @@ padding-bottom:7px;</string>
      <string notr="true">background-color:rgba(0, 0, 0, 0);
 border:none;
 border-bottom:2px solid rgba(105, 118, 132, 255);
-color:rgba(255, 255, 255, 230);
+color:rgba(255, 255, 255, 255);
 padding-bottom:7px;</string>
     </property>
     <property name="echoMode">
@@ -193,8 +193,8 @@ padding-bottom:7px;</string>
    <widget class="QPushButton" name="btn_ekle">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>530</y>
+      <x>140</x>
+      <y>500</y>
       <width>200</width>
       <height>51</height>
      </rect>
@@ -209,7 +209,7 @@ padding-bottom:7px;</string>
      </font>
     </property>
     <property name="cursor">
-     <cursorShape>OpenHandCursor</cursorShape>
+     <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="focusPolicy">
      <enum>Qt::ClickFocus</enum>
@@ -218,11 +218,11 @@ padding-bottom:7px;</string>
      <string notr="true">QPushButton {font: 75 10pt &quot;Microsoft YaHei UI&quot;;
 font-weight: bold;
 color: rgb(255, 255, 255);
-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(61, 217, 245), stop:1 rgb(240, 53, 218));
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(235, 148, 10, 255), stop:0.55 rgba(0, 10, 128), stop:0.98 rgba(235, 148, 10, 255), stop:1 rgba(235, 148, 10, 255));
 border-style: solid;
 border-radius:21px;
 }
-QPushButton:hover {background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(240, 53, 218), stop:1 rgb(61, 217 245));
+QPushButton:hover {background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,10,128), stop:0.55 rgba(235, 148, 10, 255), stop:0.98 rgba(0, 10, 128), stop:1 rgba(0, 10, 128));
 }
 
 QPushButton:pressed {
@@ -232,13 +232,17 @@ QPushButton:pressed {
     <property name="text">
      <string>Kullanıcı Ekle</string>
     </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Images/Icon/ekleikon.png</normaloff>Images/Icon/ekleikon.png</iconset>
+    </property>
    </widget>
    <widget class="QLabel" name="lbl_login">
     <property name="geometry">
      <rect>
-      <x>90</x>
+      <x>100</x>
       <y>200</y>
-      <width>261</width>
+      <width>271</width>
       <height>51</height>
      </rect>
     </property>
@@ -251,12 +255,15 @@ QPushButton:pressed {
       <bold>true</bold>
      </font>
     </property>
+    <property name="cursor">
+     <cursorShape>ForbiddenCursor</cursorShape>
+    </property>
     <property name="styleSheet">
      <string notr="true">font: 15 12pt &quot;Microsoft YaHei UI&quot;;
 font: 75 12pt &quot;Tahoma&quot;;
 font-weight: bold;
 color: white;
-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(240, 53, 218), stop:1 rgb(61, 217 100));
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,10,128), stop:0.55 rgba(235, 148, 10, 255), stop:0.98 rgba(0, 10, 128), stop:1 rgba(0, 10, 128));
 border-radius:21px;
 </string>
     </property>
@@ -288,10 +295,10 @@ border-radius:21px;
    <widget class="QPushButton" name="btn_geri">
     <property name="geometry">
      <rect>
-      <x>380</x>
-      <y>800</y>
-      <width>25</width>
-      <height>25</height>
+      <x>370</x>
+      <y>790</y>
+      <width>50</width>
+      <height>50</height>
      </rect>
     </property>
     <property name="font">
@@ -302,16 +309,14 @@ border-radius:21px;
       <underline>false</underline>
      </font>
     </property>
+    <property name="cursor">
+     <cursorShape>BusyCursor</cursorShape>
+    </property>
     <property name="styleSheet">
-     <string notr="true">color:rgb(0,0,0)
-</string>
+     <string notr="true">border-image:url(:/images/Images/Icon/geri.png)</string>
     </property>
     <property name="text">
      <string/>
-    </property>
-    <property name="icon">
-     <iconset>
-      <normaloff>Images/geri.png</normaloff>Images/geri.png</iconset>
     </property>
    </widget>
   </widget>

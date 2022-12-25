@@ -84,55 +84,96 @@ border-radius:20px;</string>
    <widget class="QLabel" name="lbl_login">
     <property name="geometry">
      <rect>
-      <x>170</x>
+      <x>40</x>
       <y>100</y>
-      <width>360</width>
+      <width>381</width>
       <height>60</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Footlight MT Light</family>
-      <pointsize>23</pointsize>
+      <family>Bell MT</family>
+      <pointsize>24</pointsize>
       <weight>50</weight>
       <bold>false</bold>
      </font>
     </property>
+    <property name="cursor">
+     <cursorShape>ForbiddenCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:28pt; font-weight:600;&quot;&gt;OOP&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
     <property name="styleSheet">
-     <string notr="true">color:rgba(255, 255, 255, 210);</string>
+     <string notr="true">background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,128,128), stop:0.55 rgba(235, 148, 61, 255), stop:0.98 rgba(0, 128, 128), stop:1 rgba(0, 128, 128));
+hover{background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,128,128), stop:0.55 rgba(235, 148, 61, 255), stop:0.98 rgba(0, 128, 128), stop:1 rgba(235, 148, 61, 255));}
+ </string>
     </property>
     <property name="text">
-     <string>OOPP </string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;OOPP &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::RichText</enum>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
     </property>
    </widget>
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>780</y>
-      <width>271</width>
+      <y>800</y>
+      <width>281</width>
       <height>55</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+     </font>
     </property>
     <property name="styleSheet">
      <string notr="true">color:rgba(255, 255, 255, 140);</string>
     </property>
     <property name="text">
-     <string>© 2022, made with by Emir,Doğukan,Ceyhun...</string>
+     <string>© 2022, Made With By Emir,Doğukan,Ceyhun...</string>
     </property>
    </widget>
    <widget class="QPushButton" name="btn_afet">
     <property name="geometry">
      <rect>
-      <x>40</x>
+      <x>50</x>
       <y>210</y>
       <width>150</width>
       <height>150</height>
      </rect>
     </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 20px;
-border-image: url(:/images/Images/afet.png);</string>
+     <string notr="true">border-radius: 40px;
+border-image: url(:/images/Images/afet.png);
+QPushButton {
+font: 75 12pt &quot;Tahoma&quot;;
+font-weight: bold;
+color: whitesmoke;
+
+border-radius:20px;
+}
+QPushButton:hover {
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,128,128), stop:0.55 rgba(235, 148, 61, 255), stop:0.98 rgba(0, 128, 128), stop:1 rgba(0, 128, 128));
+}
+QPushButton:pressed {
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0,128,128), stop:0.55 rgba(235, 148, 61, 255), stop:0.98 rgba(0, 128, 128), stop:1 rgba(0, 128, 128));
+}</string>
     </property>
     <property name="text">
      <string/>
@@ -141,14 +182,17 @@ border-image: url(:/images/Images/afet.png);</string>
    <widget class="QPushButton" name="btn_enerji">
     <property name="geometry">
      <rect>
-      <x>40</x>
+      <x>50</x>
       <y>400</y>
       <width>150</width>
       <height>150</height>
      </rect>
     </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 20px;
+     <string notr="true">border-radius: 40px;
 border-image: url(:/images/Images/enerji.png);</string>
     </property>
     <property name="text">
@@ -158,14 +202,17 @@ border-image: url(:/images/Images/enerji.png);</string>
    <widget class="QPushButton" name="btn_cevre">
     <property name="geometry">
      <rect>
-      <x>270</x>
+      <x>260</x>
       <y>210</y>
       <width>150</width>
       <height>150</height>
      </rect>
     </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 20px;
+     <string notr="true">border-radius: 40px;
 border-image: url(:/images/Images/cevre.png);</string>
     </property>
     <property name="text">
@@ -175,14 +222,17 @@ border-image: url(:/images/Images/cevre.png);</string>
    <widget class="QPushButton" name="btn_yasam">
     <property name="geometry">
      <rect>
-      <x>270</x>
+      <x>260</x>
       <y>400</y>
       <width>150</width>
       <height>150</height>
      </rect>
     </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 20px;
+     <string notr="true">border-radius: 40px;
 border-image: url(:/images/Images/yasam.png);</string>
     </property>
     <property name="text">
@@ -192,14 +242,17 @@ border-image: url(:/images/Images/yasam.png);</string>
    <widget class="QPushButton" name="btn_eko">
     <property name="geometry">
      <rect>
-      <x>40</x>
+      <x>50</x>
       <y>590</y>
       <width>150</width>
       <height>150</height>
      </rect>
     </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 20px;
+     <string notr="true">border-radius: 40px;
 border-image: url(:/images/Images/ekonomi.png);</string>
     </property>
     <property name="text">
@@ -209,14 +262,17 @@ border-image: url(:/images/Images/ekonomi.png);</string>
    <widget class="QPushButton" name="btn_tarim">
     <property name="geometry">
      <rect>
-      <x>270</x>
+      <x>260</x>
       <y>590</y>
       <width>150</width>
       <height>150</height>
      </rect>
     </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 20px;
+     <string notr="true">border-radius: 40px;
 border-image: url(:/images/Images/tarim.png);</string>
     </property>
     <property name="text">
@@ -226,10 +282,10 @@ border-image: url(:/images/Images/tarim.png);</string>
    <widget class="QPushButton" name="btn_geri">
     <property name="geometry">
      <rect>
-      <x>380</x>
-      <y>780</y>
-      <width>25</width>
-      <height>25</height>
+      <x>370</x>
+      <y>790</y>
+      <width>50</width>
+      <height>50</height>
      </rect>
     </property>
     <property name="font">
@@ -240,16 +296,14 @@ border-image: url(:/images/Images/tarim.png);</string>
       <underline>false</underline>
      </font>
     </property>
+    <property name="cursor">
+     <cursorShape>BusyCursor</cursorShape>
+    </property>
     <property name="styleSheet">
-     <string notr="true">color:rgb(0,0,0)
-</string>
+     <string notr="true">border-image:url(:/images/Images/Icon/geri.png)</string>
     </property>
     <property name="text">
      <string/>
-    </property>
-    <property name="icon">
-     <iconset>
-      <normaloff>Images/geri.png</normaloff>Images/geri.png</iconset>
     </property>
    </widget>
   </widget>
